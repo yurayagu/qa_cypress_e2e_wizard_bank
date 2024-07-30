@@ -69,7 +69,7 @@ describe('Bank app', () => {
     cy.get('[ng-click="back()"]').click();
 
     // Change Account number
-    cy.get('[name="accountSelect"]').select('1002'); // Replace with the actual account number to switch to
+    cy.get('[name="accountSelect"]').select('1002'); 
 
     // Click [Transactions]
     cy.get('[ng-class="btnClass1"]').click();
@@ -82,7 +82,7 @@ describe('Bank app', () => {
     cy.contains('.btn', 'Home').click();
 
     // Assert user is logged out
-    cy.get('.btn').contains('Customer Login').should('be.visible'); // Replace with the actual selector for the login page
+    cy.get('.btn').contains('Customer Login').should('be.visible');
   });
 });
 
